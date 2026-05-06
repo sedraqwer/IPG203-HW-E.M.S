@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace ipg203
 {
     // ============================================================
     // 1. INTERFACE - Defines basic operations for any employee
@@ -220,7 +216,7 @@ namespace ipg203
             Console.WriteLine($"  {Name} is learning and assisting in the {Department} department.");
         }
     }
-    // ============================================================
+// ============================================================
     // 4. Department class - shows Polymorphism with List
     // ============================================================
     public class Department
