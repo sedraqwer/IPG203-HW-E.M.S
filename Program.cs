@@ -280,4 +280,5 @@
             return hours > 0 && hours <= 744;
         }
     }
-
+ 
+{
