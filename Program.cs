@@ -258,3 +258,30 @@ namespace ipg203
             }
         }
     }
+// ============================================================
+    // 5. STATIC CLASS - Data validation
+    // ============================================================
+    public static class DataValidator
+    {
+        public static bool IsValidName(string name)
+        {
+            return !string.IsNullOrWhiteSpace(name) && name.Length >= 2;
+        }
+
+        public static bool IsValidAge(int age)
+        {
+            return age >= 18 && age <= 65;
+        }
+
+        public static bool IsValidSalary(double salary)
+        {
+            return salary > 0;
+        }
+
+        // IsValidHours is now used inside Developer.HoursWorked setter
+        public static bool IsValidHours(int hours)
+        {
+            return hours > 0 && hours <= 744;
+        }
+    }
+
